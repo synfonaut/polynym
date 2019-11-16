@@ -37,6 +37,7 @@ async function callPayMail(id) {
 }
 
 module.exports = {
+    resolveType: resolveType,
     resolveAddress: async function(id){
         return new Promise(async(resolve, reject) => {
             const type = resolveType(id);
